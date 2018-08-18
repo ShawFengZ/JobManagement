@@ -14,14 +14,17 @@ public interface JobListService {
     List<JobList> findAll();
 
     /** 增 */
-    void addJob();
+    JobList addJob(JobList jobList);
 
     /** 删 */
-    void deleteJob();
+    void deleteJob(JobList jobList);
 
     /** 改 */
-    void updateJob();
+    void updateJob(JobList jobList);
 
     /** 查 */
-    JobList findById();
+    List<JobList> findByName(String jobName);
+
+    /** 根据id查询 */
+    JobList findByJobId(Integer jobId);
 }

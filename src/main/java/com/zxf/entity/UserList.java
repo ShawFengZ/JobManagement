@@ -20,11 +20,11 @@ public class UserList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer userId;
 
     private String userName;
 
-    private String gender;
+    private Integer gender;
 
     private Integer age;
 

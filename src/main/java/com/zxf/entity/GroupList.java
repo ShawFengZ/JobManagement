@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 /**
  * @author zxf
@@ -19,11 +20,11 @@ import javax.persistence.Id;
 public class GroupList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer groupId;
 
     private String groupName;
 
-    private String createTime;
+    private Date createTime;
 
     private String groupInfo;
 }

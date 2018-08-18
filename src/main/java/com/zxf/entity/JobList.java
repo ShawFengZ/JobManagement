@@ -21,13 +21,13 @@ public class JobList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer jobId;
 
     private String jobName;
 
     private String jobGroup;
 
-    private String createTime;
+    private Date createTime;
 
     private Date startTime;
 
@@ -38,6 +38,5 @@ public class JobList {
     private Integer userId;
 
     private String description;
-
 
 }
